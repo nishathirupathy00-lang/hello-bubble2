@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hello Bubble</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard {
+  background: #ffffff;
+  width: 330px;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Character animation (hello effect) */
+.character {
+  width: 150px;
+  margin: 10px auto 20px;
+  animation: helloMove 1.6s infinite ease-in-out;
+}
+
+@keyframes helloMove {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(-6px) rotate(2deg); }
+  50%  { transform: translateY(0) rotate(0deg); }
+  75%  { transform: translateY(-6px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* QR styling */
+.qr {
+  width: 160px;
+  height: 160px;
+  border-radius: 15px;
+  margin: 10px auto;
+}
+
+.scan-text {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="dashboard">
+  <h1>Hello bubble 💞🐥</h1>
+
+<!-- Your QR code -->
+  <img src="qr.JPEG" class="qr" alt="QR Code">
+
+  <div class="scan-text">
+    Scan to access the image
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
